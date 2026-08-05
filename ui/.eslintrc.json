@@ -1,0 +1,70 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "google",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "@typescript-eslint/no-unused-expressions": ["off"],
+    "@typescript-eslint/explicit-function-return-type": ["off"],
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignorePattern": "^import [^,]+ from"
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "no-unused-vars": ["warn"],
+    "no-invalid-this": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": [
+      "warn",
+      {
+        "requireReturn": false,
+        "requireReturnType": false,
+        "requireReturnDescription": false,
+        "requireParamDescription": false,
+        "requireParamType": false
+      }
+    ]
+  }
+}

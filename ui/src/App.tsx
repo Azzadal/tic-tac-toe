@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MainPage } from './MainPage';
+import { Layout } from './Layout/Layout';
+import { SocketProvider } from './ws/socket';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { LeftBar } from './components/left-bar/LeftBar';
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <LeftBar />
+      <SocketProvider>
+        <MainPage />
+      </SocketProvider>
+    </Layout>
   );
-}
-
-export default App;
+};

@@ -1,0 +1,16 @@
+// prettier-ignore
+{
+  "ReactFunctionalComponent": {
+    "prefix": ["rfc", "ReactFc", "ReactFunctionComponent"],
+		"body": [
+			"import React from 'react';",
+			"",
+			"export const ${1:ComponentName}: React.FC = () => {",
+			"\t$0",
+			"};",
+			""
+		],
+		"scope": "typescriptreact",
+    "description": "A react functional component snippet",
+  }
+}

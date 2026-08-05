@@ -1,0 +1,11 @@
+// prettier-ignore
+{
+  "ConsoleLog": {
+    "prefix": ["lg"],
+    "body": [
+      "console.log($1)"
+    ],
+    "scope": "typescriptreact",
+    "description": "A Console.log snippet"
+  }
+}

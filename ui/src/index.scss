@@ -1,0 +1,83 @@
+// @import '~bootstrap/scss/bootstrap';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(50, 77, 68);
+  text-align: center;
+  font-size: large;
+  display: flex;
+}
+
+header a {
+  color: #ffde3a;
+  padding: 20px;
+}
+
+.ant-select-selector {
+  color: #193a97 !important;
+}
+
+header .client_card {
+  width: 200px;
+  height: auto;
+  white-space: nowrap;
+  line-height: 3rem;
+  color: #c5a841;
+}
+
+header .header_nav {
+  margin-left: auto;
+  line-height: 3rem;
+}
+
+.header_select {
+  padding: 3px !important;
+}
+
+.container {
+  /* min-height: calc(100vh - 120px); */
+  flex: 1;
+}
+
+.home_page {
+  text-align: center;
+}
+
+.promo {
+  font-family:
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  color: #e31212;
+}
+
+.user-info {
+  margin-left: auto;
+  margin-right: 3rem;
+  line-height: 3rem;
+}
+
+footer {
+  border: 1px solid #9592298c;
+  height: 50px;
+  background-color: rgb(50, 77, 68);
+  text-align: center;
+  font-size: large;
+  color: #ffde3a;
+  line-height: 3rem;
+  margin-top: 20px;
+}

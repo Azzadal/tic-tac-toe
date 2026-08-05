@@ -1,0 +1,20 @@
+server:
+  port: 1111
+  servlet:
+    context-path: /
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/reactor
+    username: postgres
+    password: 1234
+    pool:
+      enabled: true
+      max-size: 10
+      initial-size: 2
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
